@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>URL Shortener</title>
+  </head>
+  <body class="bg-slate-700 text-white">
+    <div class="h-screen w-screen flex items-center justify-center">
+      <div class="w-full">
+        <form class="w-[50%] m-auto" id="form">
+          <label for="url"> URL: </label>
+          <input
+            placeholder="Enter your url"
+            class="h-10 w-full px-2 rounded-md text-black"
+            type="text"
+            name="url"
+            id="url"
+          />
+          <button class="bg-red-500 w-full py-2 rounded mt-5" type="submit">
+            Short Url
+          </button>
+        </form>
+        <div class="text-center">
+          <div class="text-center mt-2" id="short-url"></div>
+          <div
+            style="display: none"
+            id="copy"
+            class="cursor-pointer bg-gray-300 px-0.5 pb-0.5 text-black rounded"
+          >
+            copy
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="../static/script.js"></script>
+</html>
